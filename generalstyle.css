@@ -1,0 +1,46 @@
+body, html {
+    font-family: 'Archivo', sans-serif !important;
+}
+html {
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%;
+    height: 133.33%;
+    overflow-x: hidden;
+    height:100%;
+    margin:auto;
+    min-height:auto;
+  }
+.navbar
+{background-color:#527787
+}
+
+.navbar-brand, .nav-link
+{
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+.nav-link:hover {
+    color: #66c0f4 !important;
+}
+
+#storenavbar{
+    background-color:#7FA3BA;
+}
+
+body {
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, #C7DBE6, #7FA3BA) fixed;
+    
+}
+.description-pane img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+

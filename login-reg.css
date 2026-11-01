@@ -1,0 +1,88 @@
+body, html {
+    font-family: 'Archivo', sans-serif !important;
+}
+html {
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%;
+    height: 133.33%;
+    overflow-x: hidden;
+}
+.navbar {
+    background-color: #527787;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.nav-link:hover {
+    color: #66c0f4 !important;
+}
+html {
+    height: 100%;
+    margin: auto;
+    min-height: auto;
+}
+#storenavbar {
+    background-color: #7FA3BA;
+}
+body {
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, #C7DBE6, #7FA3BA) fixed;
+}
+.description-pane img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* New additions for login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.login-form {
+    background-color: #527787;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #7FA3BA;
+}
+.sign-form {
+    background-color: #527787;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.form-control {
+    margin-bottom: 10px;
+}
+.btn-register {
+    background-color: #6490A3;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-register:hover {
+    background-color: #527787;
+    transform: translateY(-2px);
+}
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #527787;
+}

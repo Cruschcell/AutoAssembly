@@ -1,0 +1,133 @@
+.quantity{
+    width: 150px;
+    margin: 40px auto;
+}
+.glyphicon-minus:before{
+    content:"\2212"
+}
+.glyphicon-plus:before{
+    content:"\002b"
+}
+.input-group-btn:first-child>.btn{
+    margin-right:-1px
+}
+.input-group-btn>.btn{
+    position:relative;height:100%
+}
+.btn-number{
+    padding:6px 12px;
+    font-size:14px;
+    font-weight:400;
+    line-height:1;
+    color:#fff;
+    text-align:center;
+    border:1px solid transparent;
+    border-radius:4px;
+    height:100%;
+    display:flex;
+    align-items:center
+}
+.btn-danger{
+    background-color:#d9534f;
+    border-color:#d43f3a
+}
+.btn-success{
+    background-color:#5cb85c;
+    border-color:#4cae4c
+}
+.input-group{
+    height:38px
+}
+.rating-star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #527787;
+    margin-right: 5px;
+}
+.rating-star.active, .overall-star.filled {
+    color: #527787;
+}
+.overall-stars i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.average-rating {
+    color: #527787;
+}
+
+review-card {
+    transition: transform 0.2s;
+}
+.review-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.page-link {
+    color: #527787;
+    border-color: #527787;
+}
+.page-item.active .page-link {
+    background-color: #527787;
+    border-color: #527787;
+}
+.btn-outline-primary {
+    color: #527787;
+    border-color: #527787;
+}
+.btn-outline-primary:hover {
+    background-color: #527787;
+    color: white;
+}
+.related-items .card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.related-items .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(82, 119, 135, 0.2);
+}
+
+.related-items .card-img-top {
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    height: 180px;
+}
+
+.related-items .card:hover .card-img-top {
+    transform: scale(1.03);
+}
+
+.related-items .card-body {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.related-items .card:hover .card-body {
+    background-color: #f8f9fa;
+}
+
+.related-items .card-title {
+    color: #527787;
+    transition: color 0.3s ease;
+}
+
+.related-items .card:hover .card-title {
+    color: #3a5a6e;
+}
+
+.related-items .card-text {
+    color: #6c757d;
+}

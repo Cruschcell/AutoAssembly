@@ -1,0 +1,38 @@
+body, html {
+    font-family: 'Archivo', sans-serif !important;
+}
+
+.navbar
+{background-color:#527787}
+
+.navbar-brand, .nav-link
+{color: #fff !important;}
+
+.nav-link:hover {
+    color: #66c0f4 !important;
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/id/831396812/photo/portrait-business-team-in-office.jpg?s=612x612&w=is&k=20&c=DBRHSPUUY3KXI5oIDEAFLMPAXB5q6zFODXh8F0fk5xA=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%;
+    height: 133.33%;
+    overflow-x: hidden;
+    height:100%;
+    margin:auto;
+    min-height:auto;
+  }
+
+
+

@@ -1,0 +1,10 @@
+# Database files
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Config files with actual credentials (if you split them out)
+config.php

@@ -1,0 +1,635 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --border-color: #ddd;
+    --hover-color: #f1f1f1;
+}
+    
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    line-height: 1.6;background-attachment: fixed;
+    background: linear-gradient(to bottom, #C7DBE6, #7FA3BA) fixed;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-title {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.search-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.data-table tr:hover {
+    background-color: var(--hover-color);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    color: #3498db;
+}
+
+.delete-btn {
+    color: #e74c3c;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: var(--hover-color);
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+.sortable {
+    cursor: pointer;
+}
+.sortable:hover {
+    background-color: #f5f5f5;
+}
+.search-tips {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+.search-tips-toggle {
+    color: #337ab7;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.search-tips-content {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+.filter-tag {
+    background-color: #e9ecef;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+.filter-tag i {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #dc3545;
+}
+/* Order Management Tab Styling */
+#orderManagementTab {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tab Navigation */
+.tab-nav {
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.tab-link {
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.3s ease;
+}
+
+.tab-link.active {
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.tab-link:hover:not(.active) {
+    background-color: var(--hover-color);
+    border-bottom: 3px solid #bdc3c7;
+}
+
+/* Order Details View */
+.order-details {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-details h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.order-details h4 {
+    color: var(--text-color);
+    margin: 20px 0 15px;
+    font-size: 18px;
+}
+
+/* Customer Info Grid */
+.customer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.customer-info div {
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left: 3px solid var(--primary-color);
+}
+
+.customer-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Order Items Table */
+.order-items {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.order-items th, 
+.order-items td {
+    border: 1px solid #eee;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.order-items th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #555;
+}
+
+.order-items tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.order-items tr:hover {
+    background-color: #f5f7fa;
+}
+
+/* Order Status Form */
+.order-status-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    margin-top: 25px;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.order-status-form h4 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* Order Status Labels */
+.order-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+    min-width: 110px;
+}
+
+.status-to-be-delivered {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.status-delivered {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-failed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Back Button */
+.back-to-list {
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+/* View Details Button */
+.view-details-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.view-details-btn:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+    color: white;
+}
+
+.view-details-btn i {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .customer-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .order-items {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    #orderManagementTab {
+        padding: 15px;
+    }
+    
+    .tab-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Search form for orders */
+#orderManagementTab .search-container {
+    margin-bottom: 25px;
+}
+
+#orderManagementTab .table-container {
+    margin-top: 0;
+}
+
+#orderManagementTab .table-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* Ensure order management tab doesn't cause horizontal scroll */
+#orderManagementTab .data-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#orderManagementTab .data-table th, 
+#orderManagementTab .data-table td {
+    word-wrap: break-word;
+    max-width: 250px;
+}
+
+/* Improve the email column */
+#orderManagementTab .data-table td:nth-child(3) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Container layout adjustments */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+}
+
+.grid-container {
+    flex: 1;
+}
+
+#orderManagementTab:not(.active) {
+    display: none;
+}
+
+#orderManagementTab.active {
+    display: block;
+}
+
+.tab-navigation {
+    display: flex;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.payment-status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        
+        .status-pending {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status-completed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status-failed {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .payment-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .dashboard-tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab-link {
+            padding: 10px 15px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #495057;
+            border-radius: 5px 5px 0 0;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-link:hover {
+            background-color: #e9ecef;
+        }
+        
+        .tab-link.active {
+            background-color: #007bff;
+            color: white;
+            border-bottom: 2px solid #007bff;
+        }
+        
+        #productManagementTab, #orderManagementTab, #paymentManagementTab {
+            display: none;
+        }
+        
+        #productManagementTab.active, #orderManagementTab.active, #paymentManagementTab.active {
+            display: block;
+        }
+        

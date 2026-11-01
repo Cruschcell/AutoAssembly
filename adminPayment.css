@@ -1,0 +1,358 @@
+   .payment-pane {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0 auto 20px;
+    max-width: 1200px;
+    overflow-x: hidden;
+}
+#paymentManagementTab:not(.active) {
+    display: none;
+}
+
+#paymentManagementTab.active {
+    display: block;
+}
+
+.payment-details {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.payment-details h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.payment-details h4 {
+    color: var(--text-color);
+    margin: 20px 0 15px;
+    font-size: 18px;
+}
+
+.payment-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.payment-info div {
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left: 3px solid var(--primary-color);
+}
+
+.payment-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Payment Status Form */
+.payment-status-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    margin-top: 25px;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.payment-status-form h4 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.payment-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+    min-width: 110px;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.status-completed {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-failed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Search form for payments */
+#paymentManagementTab .search-container {
+    margin-bottom: 25px;
+}
+
+#paymentManagementTab .table-container {
+    margin-top: 0;
+}
+
+#paymentManagementTab .table-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+#paymentManagementTab .data-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#paymentManagementTab .data-table th, 
+#paymentManagementTab .data-table td {
+    word-wrap: break-word;
+    max-width: 250px;
+}
+
+#paymentManagementTab .data-table td:nth-child(4),
+#paymentManagementTab .data-table td:nth-child(5) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .payment-info {
+        grid-template-columns: 1fr;
+    }
+    
+    #paymentManagementTab {
+        padding: 15px;
+    }
+}
+.sales-pane {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0 auto 20px;
+    max-width: 1200px;
+    overflow-x: hidden;
+}
+
+/* Sales Overview Header */
+.sales-pane h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+/* Stats Cards Row */
+.sales-pane .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Stats Card Column */
+.sales-pane .col-md-4 {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Individual Stats Card */
+.stat-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 100%;
+}
+
+.stat-card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.stat-card-header i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.stat-card-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.stat-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Monthly Sales Section */
+.monthly-sales {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.monthly-sales h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.monthly-sales-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Bottom Row Sections */
+.payment-methods, .top-products {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.payment-methods h3, .top-products h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Payment Method Items */
+.payment-method-item {
+    margin-bottom: 15px;
+}
+
+.payment-method-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.payment-method-name {
+    font-weight: 600;
+}
+
+.payment-method-stats {
+    color: #666;
+    font-size: 14px;
+}
+
+.payment-method-bar-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 10px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.payment-method-bar {
+    background-color: var(--primary-color);
+    height: 10px;
+    border-radius: 10px;
+}
+
+.payment-method-percentage {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Top Products Table */
+.top-products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Data Tables General */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.data-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive fixes */
+@media (max-width: 992px) {
+    .sales-pane .row {
+        flex-direction: column;
+    }
+    
+    .sales-pane .col-md-4, 
+    .sales-pane .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stat-card-body {
+        padding: 15px;
+    }
+    
+    .stat-value {
+        font-size: 20px;
+    }
+    
+    .sales-pane {
+        padding: 15px;
+    }
+}
